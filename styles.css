@@ -69,7 +69,7 @@ nav {
 /* about me */
 
 .about-me {
-    height: auto;
+    height: fit-content;
     background-color: var(--background);
     color: var(--text-color);
     margin: 0;
@@ -87,17 +87,14 @@ nav {
     text-align: left;
     line-height: 2rem;
     flex-wrap: wrap;
-    transform: translateX(100px);
+    /* transform: translateX(100px);
     opacity: 0;
-    /* height: 0; */
-    transition: 150ms ease-in;
-    overflow-y: auto;
+    transition: 150ms ease-in; */
 }
-.appear {
+/* .appear {
     transform: translateX(0);
-    /* height: 100%; */
     opacity: 1;
-}
+} */
 .details > p {
     display: block;
     width: 30vw;
