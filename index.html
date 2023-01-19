@@ -4,52 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <script defer src="./appear-animation.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>Fahad Amjad</title>
-    <script src="./script.js"></script>
-    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <div class="navbar">
-            <ul>
-                <li data-pageid="1">Home</li>
-                <li>Contact</li>
-            </ul>
+
+    <!--  the top navigation bar-->
+
+    <nav>
+        <div class="left-nav">Copyright &#169 2020</div>
+        <div class="right-nav">
+            <a href="#about">About</a>
+            <button>Download CV</button>
         </div>
-        <div class="hero">
-            <div class="herobox">
-                <p>"All great things Have humble beginnings."</p>
-                <div style="text-align: center;">
-                    <a href="https://www.instagram.com/_fahad_amjad/">
-                        <button>Coffee?</button>
-                    </a>
-                </div>
-            </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Welcome, Bonjour</h1>
+            <hr>
         </div>
-        <div class="bingo">
-            <h1>Fahad Amjad</h1>
-            <p>Hi welcome to my page, it's good to see you. I am self-learning web developer building little things on the way (breaking more I think &#128517). Its not much but I have built it myself and that makes me proud. I am documenting my journey to become a full stack engineer on my socials. Feel free to come by and enjoy the comedic duo of me and code. All my projects are opensource , you can fork and modify them as much as you like.. Do follow the socials , I give cookies to those who follow...really!</p>
+    </div>
+
+    <!-- About Me -->
+
+    <div class="about-me" id="about">
+        <h2>Who am I?</h2>
+        <hr>
+        <div class="details come-out">
+            <p>I am a freelance fullstack javascript developer based in Faisalabad Punjabi.
+                I love working in both frontend and backend technologies and trust me, I 
+                am the most passionate programmer you will ever meet.
+            </p>
+            <img src="./images/me.jpg" height="300" width="300">
         </div>
-        <div class="footer">
-            <div class="insta">
-                <a href="https://www.instagram.com/_fahad_amjad/">
-                    <img src="./icons8-instagram-photo-and-video-sharing-social-networking-service-owned-by-facebook-24.png">
-                </a>
+    </div>
+    
+    <!--Icons courtesy of https://icons8.com/-->
+
+    <!-- Technologies-->
+    <div class="tech">
+        <h2>Expertise</h2>
+        <hr>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img src="https://img.icons8.com/external-tal-revivo-duo-tal-revivo/100/null/external-nodejs-is-an-open-source-cross-platform-javascript-run-time-environment-logo-duo-tal-revivo.png" height="100" width="100">
+                <p>Nodejs</p>
             </div>
-            <div class="github">
-                <a href="https://www.github.com/fahadamjadckj">
-                    <img src="./icons8-github-24.png">
-                </a>
+
+            <div class="tech-card">
+                <img src="https://img.icons8.com/clouds/100/null/react.png" height="100" width="100">
+                <p>React</p>
             </div>
-            <div class="twitter">
-                <a href="https://twitter.com/imscenty_mental">
-                    <img src="./icons8-twitter-30.png">
-                </a>
+
+            <div class="tech-card">
+                <img src="https://img.icons8.com/fluency/144/null/typescript--v2.png" height="100" width="100">
+                <p>Typescript</p>
             </div>
-        </div>
-        <div class="end">
-            <p style="margin-top: 0px; margin-bottom: 20px;">Designed by Fahad Amjad</p>
+
+            <div class="tech-card">
+                <img src="https://img.icons8.com/color/144/000000/nextjs.png" height="100" width="100">
+                <p>Nextjs</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="
+                https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/64/null/external-nginx-accelerates-content-and-application-delivery-improves-security-logo-tritone-tal-revivo.png" height="100" width="100">
+                <p>Nginx</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://img.icons8.com/color/144/null/webpack.png" height="100" width="100">
+                <p>Webpack</p>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+
+

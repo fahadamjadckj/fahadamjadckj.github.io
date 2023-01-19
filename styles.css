@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+:root {
+    --text-color: #FFFFFF;
+    --background: #080808;
+}
+body {
+    font-family: 'Roboto';
+    font-size: 15px;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100vh;
+    background: var(--background);
+}
+nav {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: var(--text-color);
+    background-color: var(--background);  
+    box-shadow: 0px 0px 10px var(--background);
+}
+.right-nav > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.right-nav {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.right-nav > button {
+    color: #FFFFFF;
+    background-color: var(--background);
+    border: 2px solid var(--text-color);
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+.right-nav > button:hover {
+    background-color: var(--text-color);
+    color: var(--background);
+}
+
+/* Holds the code for hero section*/
+
+.hero-section {
+    height: 100vh;
+    background: url(./images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section > div {
+    padding: 5rem;
+    color: var(--text-color);
+    font-size: 2.5rem;
+
+}
+
+/* about me */
+
+.about-me {
+    height: 70vh;
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+    padding: 5rem;
+    
+}
+.about-me > h2 {
+    font-size: 2.5rem;
+}
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 2rem;
+    flex-wrap: wrap;
+    transform: translateX(100px);
+    opacity: 0;
+    /* height: 0; */
+    transition: 150ms ease-in;
+    overflow-y: auto;
+}
+.appear {
+    transform: translateX(0);
+    /* height: 100%; */
+    opacity: 1;
+}
+.details > p {
+    display: block;
+    width: 30vw;
+}
+
+
+
+/* Technologies  */
+
+.tech {
+    height: 70vh;
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+    padding: 5rem;
+}
+.tech > h2 {
+    font-size: 2.5rem;
+}
+.tech-card {
+    margin-top: 2rem;
+}
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+.tech-card > img {
+    height: 4rem;
+    width: 4rem;
+}
+
+
+
+/* media query for font-size*/
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 7px;
+    }
+    .details > img {
+        height: 40vw;
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 700px ) and (min-width: 480px){
+    html {
+        font-size: 10px;
+    }
+    .details > img {
+        height: 40vw;
+        width: 40vw;
+    }
+}
