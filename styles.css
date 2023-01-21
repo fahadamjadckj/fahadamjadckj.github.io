@@ -87,19 +87,20 @@ nav {
     text-align: left;
     line-height: 2rem;
     flex-wrap: wrap;
-    /* transform: translateX(100px);
-    opacity: 0;
-    transition: 150ms ease-in; */
+    overflow-x: hidden;
 }
-/* .appear {
-    transform: translateX(0);
-    opacity: 1;
-} */
+
 .details > p {
     display: block;
     width: 30vw;
 }
-
+.anim-before {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+.show {
+    opacity: 1;
+}
 
 
 /* Technologies  */
@@ -132,7 +133,10 @@ nav {
 /* media query for font-size*/
 @media screen and (max-width: 480px) {
     html {
-        font-size: 7px;
+        font-size: 9px;
+    }
+    .hero-section {
+        height: 60vh;
     }
     .details > img {
         height: 40vw;
@@ -144,7 +148,7 @@ nav {
 }
 @media screen and (max-width: 700px ) and (min-width: 480px){
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
     .details > img {
         height: 40vw;
