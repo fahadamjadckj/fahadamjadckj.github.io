@@ -34,14 +34,14 @@ nav {
     gap: 0.5rem;
     align-items: center;
 }
-.right-nav > button {
+.cv-button {
     color: #FFFFFF;
     background-color: var(--background);
     border: 2px solid var(--text-color);
     padding: 0.5rem;
     border-radius: 5%;
 }
-.right-nav > button:hover {
+.cv-button:hover {
     background-color: var(--text-color);
     color: var(--background);
 }
@@ -140,7 +140,10 @@ nav {
 .footer {
     color: var(--text-color);
     height: 20vh;
-    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 .footer > h2 {
     font-size: 2.5rem;
