@@ -112,11 +112,14 @@ nav {
 /* Technologies  */
 
 .tech {
-    height: 70vh;
+    height: fit-content;
     background-color: var(--background);
     color: var(--text-color);
     margin: 0;
-    padding: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
 }
 .tech > h2 {
     font-size: 2.5rem;
