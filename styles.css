@@ -50,18 +50,19 @@ nav {
 
 .hero-section {
     height: 100vh;
-    background: url(./images/hero.jpg);
+    background: url(./images/hero2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(200);
+    filter: grayscale(0);
     display: flex;
     align-items: center;
     justify-content: center;
+    /* text-shadow: 2px 2px black; */
 }
 .hero-section > div {
     padding: 5rem;
-    color: var(--text-color);
+    color: white;
     font-size: 2.5rem;
 
 }
